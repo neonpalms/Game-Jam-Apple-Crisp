@@ -22,7 +22,6 @@ public class RandomizeColorOnAwakeBehavior : MonoBehaviour
 
         Color randomizedColor = Random.ColorHSV(0.0f, 1.0f, 0.0f, 1.0f, value, value);
         randomizedColor.a = alpha;
-
         m_MySprite.color = randomizedColor;
     }
 }
