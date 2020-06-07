@@ -132,6 +132,8 @@ GameObject:
   - component: {fileID: 177722879}
   - component: {fileID: 177722878}
   - component: {fileID: 177722880}
+  - component: {fileID: 177722881}
+  - component: {fileID: 177722883}
   m_Layer: 0
   m_Name: Fake Quit Button
   m_TagString: Untagged
@@ -214,7 +216,7 @@ Animator:
   m_GameObject: {fileID: 177722877}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: e20963e3cb0ac8d42a721ca04d37f6e3, type: 2}
+  m_Controller: {fileID: 22100000, guid: 3053de6dedda7074c8673728b4c11577, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -223,6 +225,34 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!58 &177722881
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 177722877}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 1.3333334
+--- !u!114 &177722883
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 177722877}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 973e6774bcbf6654fbf8b6516b0829b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &257499476
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -282,7 +312,7 @@ PrefabInstance:
     - target: {fileID: 9158694572921565857, guid: 1c9139bb728318a43ba33082c1ba47bb,
         type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 9158694572921565857, guid: 1c9139bb728318a43ba33082c1ba47bb,
         type: 3}
@@ -353,6 +383,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Canvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 9158694572921565869, guid: 1c9139bb728318a43ba33082c1ba47bb,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9158694573004248224, guid: 1c9139bb728318a43ba33082c1ba47bb,
         type: 3}
@@ -562,6 +597,8 @@ GameObject:
   - component: {fileID: 540621329}
   - component: {fileID: 540621328}
   - component: {fileID: 540621330}
+  - component: {fileID: 540621332}
+  - component: {fileID: 540621331}
   m_Layer: 0
   m_Name: Fake Play Button
   m_TagString: Untagged
@@ -653,6 +690,34 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &540621331
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 540621327}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f5843092d58c7645a0274b77e618501, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!58 &540621332
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 540621327}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 1.3333334
 --- !u!1 &591582997
 GameObject:
   m_ObjectHideFlags: 0
@@ -682,7 +747,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &591582999
 MonoBehaviour:
@@ -1209,7 +1274,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1886866299 stripped
 GameObject:

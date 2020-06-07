@@ -17,6 +17,6 @@ public class WinListenerBehavior : MonoBehaviour
     {
         winConditionMet = false;
         Debug.Log("Win condition met!");
-        // TODO: Transition to next level!
+        // TODO: animated transition to next level!
     }
 }
