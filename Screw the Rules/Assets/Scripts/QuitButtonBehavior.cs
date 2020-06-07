@@ -16,6 +16,9 @@ public class QuitButtonBehavior : MonoBehaviour
     // Quits the game, duh.
     public void QuitGame()
     {
+#if UNITY_EDITOR
+        Debug.Log("Quit game.");
+#endif
         Application.Quit();
     }
 }
