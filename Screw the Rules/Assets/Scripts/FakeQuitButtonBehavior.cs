@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class FakeQuitButtonBehavior : MonoBehaviour
 {
+    #region Fields
+    public GameObject realPlayButton;
+    #endregion
+
     #region Members
     private SpriteRenderer m_MySprite;
     private Animator m_MyAnimator;
@@ -25,6 +29,7 @@ public class FakeQuitButtonBehavior : MonoBehaviour
     {
         m_MyCollider.enabled = false;
         m_MyAnimator.SetTrigger("Swing and Fall");
+        realPlayButton.SetActive(true);
     }
 
     private void OnMouseOver()

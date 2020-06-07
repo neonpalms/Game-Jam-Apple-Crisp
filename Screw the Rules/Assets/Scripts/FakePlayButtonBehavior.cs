@@ -21,7 +21,6 @@ public class FakePlayButtonBehavior : MonoBehaviour
     // Plays an error sound when this button is clicked.
     private void OnMouseDown()
     {
-        Debug.Log("Wrong!");
         // TODO: Play Error sound!
     }
 

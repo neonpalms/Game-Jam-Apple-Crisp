@@ -1,11 +1,16 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using UnityEngine.PlayerLoop;
+﻿using UnityEngine;
 
 public class WinListenerBehavior : MonoBehaviour
 {
-    public static bool winConditionMet = false;
+    public static bool winConditionMet;
+
+    // Every time an instance of this object is created, which should be every scene,
+    // then set the winCondition to false.  Special priority is added to this script in
+    // the Unity editor.
+    private void Awake()
+    {
+        winConditionMet = false;
+    }
 
     void Update()
     {
