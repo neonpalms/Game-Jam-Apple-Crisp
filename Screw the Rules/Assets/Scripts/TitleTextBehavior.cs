@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Linq.Expressions;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -7,7 +8,6 @@ public class TitleTextBehavior : MonoBehaviour
 {
     #region Fields
     public List<Font> randomFonts;
-    public List<Color> randomColors;
     #endregion
 
     #region Members
@@ -18,19 +18,12 @@ public class TitleTextBehavior : MonoBehaviour
     private void Awake()
     {
         m_MyText = GetComponent<Text>();
-        ChangeFontAndColor();
+        ChangeFont();
     }
 
     // This is the public method for the button event OnClick to invoke.
-    // It calls both private methods ChangeFont and ChangeColor.
-    // They do exactly what they say to the text component.
-    public void ChangeFontAndColor()
-    {
-        ChangeFont();
-        ChangeColor();
-    }
-
-    private void ChangeFont()
+    // It changes the font to a random font in the list.
+    public void ChangeFont()
     {
         if (randomFonts.Count == 0)
         {
@@ -40,18 +33,8 @@ public class TitleTextBehavior : MonoBehaviour
 
         int index = Random.Range(0, randomFonts.Count);
         m_MyText.font = randomFonts[index];
-    }
 
-    private void ChangeColor()
-    {
-        if (randomFonts.Count == 0)
-        {
-            Debug.LogError("Fill this array with colors so I can have one to pick from, please.");
-            return;
-        }
-
-        int index = Random.Range(0, randomColors.Count);
-        m_MyText.color = randomColors[index];
+        // TODO: Play 'Pop' sound here!
     }
     #endregion
 }

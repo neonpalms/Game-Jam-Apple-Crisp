@@ -1,9 +1,14 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
+    - HintButtonBehavior
     - LevelNumberBehavior
     - QuitButtonBehavior
+    - RandomizeColorOnAwakeBehavior
     - RestartButtonBehavior
+    - TitleTextBehavior
+    - TitleTextFlyInTween
+    - WinListenerBehavior
     Unity.2D.Animation.Editor.dll:
     - UnityEditor.U2D.Animation.BoneGizmo
     Unity.2D.Tilemap.Editor.dll:
@@ -14,6 +19,14 @@ ScriptsOnlyBuild:
     - UnityEditor.Tilemaps.TileDragAndDropManager
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
+    UnityEditor.Graphs.dll:
+    - UnityEditor.Graphs.AnimationBlendTree.Graph
+    - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
+    - UnityEditor.Graphs.AnimationStateMachine.Graph
+    - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.StateNode
+    - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
     - UnityEditor.TestTools.TestRunner.TestListCacheData
@@ -52,27 +65,37 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11170}
+      Script: {instanceID: 11150}
     - Class: 114
-      Script: {instanceID: 11458}
+      Script: {instanceID: 11172}
     - Class: 114
-      Script: {instanceID: 11512}
+      Script: {instanceID: 11460}
     - Class: 114
-      Script: {instanceID: 12172}
+      Script: {instanceID: 11514}
     - Class: 114
-      Script: {instanceID: 12254}
+      Script: {instanceID: 12174}
     - Class: 114
-      Script: {instanceID: 12872}
+      Script: {instanceID: 12258}
     - Class: 114
-      Script: {instanceID: 13116}
+      Script: {instanceID: 12324}
     - Class: 114
-      Script: {instanceID: 13630}
+      Script: {instanceID: 12722}
     - Class: 114
-      Script: {instanceID: 14138}
+      Script: {instanceID: 13130}
     - Class: 114
-      Script: {instanceID: 14240}
+      Script: {instanceID: 13646}
     - Class: 114
-      Script: {instanceID: 15214}
+      Script: {instanceID: 13866}
+    - Class: 114
+      Script: {instanceID: 14160}
+    - Class: 114
+      Script: {instanceID: 14262}
+    - Class: 114
+      Script: {instanceID: 14324}
+    - Class: 114
+      Script: {instanceID: 28846}
+    - Class: 114
+      Script: {instanceID: 29378}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -92,6 +115,12 @@ ScriptsOnlyBuild:
     - Class: 224
       Script: {instanceID: 0}
   scriptHashData:
+  - hash:
+      serializedVersion: 2
+      Hash: 5f1752ed2092162f016c19510c28a8b9
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: Button
   - hash:
       serializedVersion: 2
       Hash: 4bc4346a71a8df53a6b106f68ef3a190
@@ -328,6 +357,12 @@ ScriptsOnlyBuild:
     className: Selectable
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: RestartButtonBehavior
+  - hash:
+      serializedVersion: 2
       Hash: b3ab2106268377ffe25dd18ac23dca28
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
@@ -347,6 +382,12 @@ ScriptsOnlyBuild:
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: LeanTween
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Unity.2D.Animation.Runtime.dll
     namespaceName: UnityEngine.U2D.Animation
     className: SpriteSkinEntity
@@ -356,6 +397,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TMP_SpriteAnimator
+  - hash:
+      serializedVersion: 2
+      Hash: cc22ba34d07477619b4b863ff8a8d95a
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: HintButtonBehavior
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -368,12 +415,6 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TextContainer
-  - hash:
-      serializedVersion: 2
-      Hash: 5f1752ed2092162f016c19510c28a8b9
-    assemblyName: UnityEngine.UI.dll
-    namespaceName: UnityEngine.UI
-    className: Button
   - hash:
       serializedVersion: 2
       Hash: f84d945e5e1ca985698660fc26e9657f
@@ -478,6 +519,12 @@ ScriptsOnlyBuild:
     className: BeforeAfterTestCommandState
   - hash:
       serializedVersion: 2
+      Hash: 93c5c50cf2cdc06fbd3119f03c054858
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: TitleTextBehavior
+  - hash:
+      serializedVersion: 2
       Hash: c3d3430df9e3ea95e3e3d587961390fb
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
@@ -574,6 +621,12 @@ ScriptsOnlyBuild:
     className: Slider
   - hash:
       serializedVersion: 2
+      Hash: 5d684ebfb0cdef5697e34ad5d64c7952
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: TitleTextFlyInTween
+  - hash:
+      serializedVersion: 2
       Hash: 0fd6822f6177297bd0eb4d83cc7a9030
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -586,10 +639,22 @@ ScriptsOnlyBuild:
     className: PlayableTrack
   - hash:
       serializedVersion: 2
+      Hash: e85c0db00b4608751c3ca85f0f2d9f16
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: GameObjectFadeIn
+  - hash:
+      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
-    className: RestartButtonBehavior
+    className: WinListenerBehavior
+  - hash:
+      serializedVersion: 2
+      Hash: 559e83468b3fad79b5402ba6598ef6fe
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: RandomizeColorOnAwakeBehavior
   platform: 19
   scenePathNames:
   - Assets/Scenes/01 - Title Screen.unity
