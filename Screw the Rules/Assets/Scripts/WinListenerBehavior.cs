@@ -2,7 +2,13 @@
 
 public class WinListenerBehavior : MonoBehaviour
 {
+    #region Statc Fields
     public static bool winConditionMet;
+    #endregion
+
+    #region Fields
+    public LevelSwipeInTransitionBehavior transition;
+    #endregion
 
     // Every time an instance of this object is created, which should be every scene,
     // then set the winCondition to false.  Special priority is added to this script in
@@ -20,8 +26,7 @@ public class WinListenerBehavior : MonoBehaviour
 
     private void WinLevel()
     {
+        transition.winConditionMet = true;
         winConditionMet = false;
-        Debug.Log("Win condition met!");
-        // TODO: animated transition to next level!
     }
 }

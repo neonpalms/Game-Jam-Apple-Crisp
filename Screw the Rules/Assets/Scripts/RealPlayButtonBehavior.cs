@@ -2,6 +2,10 @@
 
 public class RealPlayButtonBehavior : MonoBehaviour
 {
+    #region Fields
+    public LevelNumberFadeIn levelNumberTextBox;
+    #endregion
+
     #region Members
     private SpriteRenderer m_MySprite;
     private BoxCollider2D m_MyCollider;
@@ -21,6 +25,7 @@ public class RealPlayButtonBehavior : MonoBehaviour
     {
         WinListenerBehavior.winConditionMet = true;
         m_MyCollider.enabled = false;
+        levelNumberTextBox.FadeIn();
         // TODO: Play ding-dong sound!
     }
 

@@ -5,6 +5,8 @@ ScriptsOnlyBuild:
     - FakeQuitButtonBehavior
     - HintButtonBehavior
     - LevelNumberBehavior
+    - LevelNumberFadeIn
+    - LevelSwipeInTransitionBehavior
     - QuitButtonBehavior
     - RandomizeAnimationControllerOnAwakeBehavior
     - RandomizeColorOnAwakeBehavior
@@ -23,11 +25,6 @@ ScriptsOnlyBuild:
     - UnityEditor.Tilemaps.TileDragAndDropManager
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
-    UnityEditor.Graphs.dll:
-    - UnityEditor.Graphs.AnimationBlendTree.Graph
-    - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.Graph
-    - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
     - UnityEditor.TestTools.TestRunner.TestListCacheData
@@ -72,9 +69,9 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11150}
     - Class: 114
-      Script: {instanceID: 11172}
+      Script: {instanceID: 11152}
     - Class: 114
-      Script: {instanceID: 11460}
+      Script: {instanceID: 11174}
     - Class: 114
       Script: {instanceID: 11514}
     - Class: 114
@@ -94,21 +91,25 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 12732}
     - Class: 114
-      Script: {instanceID: 12974}
+      Script: {instanceID: 12792}
     - Class: 114
-      Script: {instanceID: 13142}
+      Script: {instanceID: 12976}
     - Class: 114
-      Script: {instanceID: 13658}
+      Script: {instanceID: 13144}
     - Class: 114
-      Script: {instanceID: 13878}
+      Script: {instanceID: 13660}
     - Class: 114
-      Script: {instanceID: 14172}
+      Script: {instanceID: 13686}
     - Class: 114
-      Script: {instanceID: 14274}
+      Script: {instanceID: 13882}
     - Class: 114
-      Script: {instanceID: 14336}
+      Script: {instanceID: 14176}
     - Class: 114
-      Script: {instanceID: 15464}
+      Script: {instanceID: 14278}
+    - Class: 114
+      Script: {instanceID: 14340}
+    - Class: 114
+      Script: {instanceID: 31058}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -136,6 +137,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: Button
+  - hash:
+      serializedVersion: 2
+      Hash: aeb62f729c52c814dec86c47dcac1471
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: Text
   - hash:
       serializedVersion: 2
       Hash: 4bc4346a71a8df53a6b106f68ef3a190
@@ -184,12 +191,6 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: ActivationTrack
-  - hash:
-      serializedVersion: 2
-      Hash: aeb62f729c52c814dec86c47dcac1471
-    assemblyName: UnityEngine.UI.dll
-    namespaceName: UnityEngine.UI
-    className: Text
   - hash:
       serializedVersion: 2
       Hash: 499fd23433e68e265d153aa6b95d0047
@@ -432,7 +433,7 @@ ScriptsOnlyBuild:
     className: SpriteSkinEntity
   - hash:
       serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+      Hash: 480af42f6bc510e3326769c791901f1e
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: WinListenerBehavior
@@ -454,6 +455,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.TestRunner.dll
     namespaceName: UnityEngine.TestTools.TestRunner.Callbacks
     className: RemoteTestResultSender
+  - hash:
+      serializedVersion: 2
+      Hash: de30832ea65658da55ef845dc6e22b2b
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: LevelSwipeInTransitionBehavior
   - hash:
       serializedVersion: 2
       Hash: 4fd8bf02e3089425d3502e26c44ba31a
@@ -562,6 +569,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: GraphicRaycaster
+  - hash:
+      serializedVersion: 2
+      Hash: 42fb1979f2e275a4320f321f559df44a
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: RealPlayButtonBehavior
   - hash:
       serializedVersion: 2
       Hash: 88cc9df3c6fc697bfbeacd24c0d6f2d7
@@ -693,7 +706,7 @@ ScriptsOnlyBuild:
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
-    className: RealPlayButtonBehavior
+    className: LevelNumberFadeIn
   platform: 19
   scenePathNames:
   - Assets/Scenes/01 - Title Screen.unity
