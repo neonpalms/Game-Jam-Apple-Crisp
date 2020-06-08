@@ -12,7 +12,7 @@ public class HintButtonBehavior : MonoBehaviour
     public void ShowHintText()
     {
         if (hintText != null)
-            hintText.enabled = true;
+            hintText.color  = Color.white;
         else
             Debug.LogError("Assign the hintText variable, you dope!");
     }

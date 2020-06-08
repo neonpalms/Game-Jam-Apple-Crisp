@@ -9,27 +9,28 @@ public class LevelSwipeInTransitionBehavior : MonoBehaviour
     #region Fields
     public float swipeDuration = 1.0f;
     public float delay = 0.0f;
-    [Range(0.0f, 1.0f)] public float colorAlpha = 1.0f;
-    [Range(0.0f, 1.0f)] public float colorValue = 1.0f;
+    [Range(0.0f, 1.0f)] public float randomizedColorBaseAlpha = 1.0f;
+    [Range(0.0f, 1.0f)] public float randomizedColorBaseValue = 0.75f;
 
     [HideInInspector] public bool winConditionMet = false;
     #endregion
 
     #region Members
-    Image m_MyImage;
+    private Image m_MyImage;
     #endregion
 
+    #region Methods
     private void Awake()
     {
         m_MyImage = GetComponent<Image>();
 
         // For fun!
-        RandomizeMyColor();
+        //RandomizeMyColor();
 
         // Set the text in this transition object to the next level's
         // build number.  Since the player would be transitioning to the
         // next level.
-        GetComponentInChildren<Text>().text = "" + SceneManager.GetActiveScene().buildIndex + 2;
+        GetComponentInChildren<Text>().text = (SceneManager.GetActiveScene().buildIndex + 2).ToString();
     }
 
     private void Update()
@@ -53,8 +54,9 @@ public class LevelSwipeInTransitionBehavior : MonoBehaviour
     // color property within certain constraints.
     private void RandomizeMyColor()
     {
-        Color randomizedColor = UnityEngine.Random.ColorHSV(0.0f, 1.0f, 0.0f, 1.0f, colorValue, colorValue);
-        randomizedColor.a = colorAlpha;
+        Color randomizedColor = UnityEngine.Random.ColorHSV(0.0f, 1.0f, 0.0f, 1.0f, randomizedColorBaseValue, randomizedColorBaseValue);
+        randomizedColor.a = randomizedColorBaseAlpha;
         m_MyImage.color = randomizedColor;
     }
+    #endregion
 }

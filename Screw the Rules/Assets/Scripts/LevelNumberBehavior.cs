@@ -2,6 +2,7 @@
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
+[RequireComponent(typeof(Text))]
 public class LevelNumberBehavior : MonoBehaviour
 {
     // Simply put, this script, when attached to a Canvas Text object
@@ -9,6 +10,6 @@ public class LevelNumberBehavior : MonoBehaviour
     // OR, to put it another way, the level number!
     void Awake()
     {
-        GetComponent<Text>().text = "" + SceneManager.GetActiveScene().buildIndex + 1;
+        GetComponent<Text>().text = (SceneManager.GetActiveScene().buildIndex + 1).ToString();
     }
 }

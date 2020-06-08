@@ -7,6 +7,7 @@ ScriptsOnlyBuild:
     - LevelNumberBehavior
     - LevelNumberFadeIn
     - LevelSwipeInTransitionBehavior
+    - LevelSwipeOutTransitionBehavior
     - QuitButtonBehavior
     - RandomizeAnimationControllerOnAwakeBehavior
     - RandomizeColorOnAwakeBehavior
@@ -69,9 +70,9 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11150}
     - Class: 114
-      Script: {instanceID: 11152}
+      Script: {instanceID: 11172}
     - Class: 114
-      Script: {instanceID: 11174}
+      Script: {instanceID: 11460}
     - Class: 114
       Script: {instanceID: 11514}
     - Class: 114
@@ -87,29 +88,108 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 12374}
     - Class: 114
-      Script: {instanceID: 12680}
+      Script: {instanceID: 12468}
     - Class: 114
-      Script: {instanceID: 12732}
+      Script: {instanceID: 12682}
     - Class: 114
-      Script: {instanceID: 12792}
+      Script: {instanceID: 12734}
     - Class: 114
-      Script: {instanceID: 12976}
+      Script: {instanceID: 12794}
     - Class: 114
-      Script: {instanceID: 13144}
+      Script: {instanceID: 12978}
     - Class: 114
-      Script: {instanceID: 13660}
+      Script: {instanceID: 13146}
     - Class: 114
-      Script: {instanceID: 13686}
+      Script: {instanceID: 13662}
     - Class: 114
-      Script: {instanceID: 13882}
+      Script: {instanceID: 13688}
     - Class: 114
-      Script: {instanceID: 14176}
+      Script: {instanceID: 13884}
     - Class: 114
-      Script: {instanceID: 14278}
+      Script: {instanceID: 14178}
     - Class: 114
-      Script: {instanceID: 14340}
+      Script: {instanceID: 14280}
     - Class: 114
-      Script: {instanceID: 31058}
+      Script: {instanceID: 14342}
+    - Class: 114
+      Script: {instanceID: 23426}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
+    - Class: 212
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 221
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
+    Assets/Scenes/02 - Number Pattern.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 74
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 91
+      Script: {instanceID: 0}
+    - Class: 95
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 11150}
+    - Class: 114
+      Script: {instanceID: 11172}
+    - Class: 114
+      Script: {instanceID: 11460}
+    - Class: 114
+      Script: {instanceID: 11514}
+    - Class: 114
+      Script: {instanceID: 12110}
+    - Class: 114
+      Script: {instanceID: 12178}
+    - Class: 114
+      Script: {instanceID: 12262}
+    - Class: 114
+      Script: {instanceID: 12328}
+    - Class: 114
+      Script: {instanceID: 12374}
+    - Class: 114
+      Script: {instanceID: 12682}
+    - Class: 114
+      Script: {instanceID: 12734}
+    - Class: 114
+      Script: {instanceID: 12794}
+    - Class: 114
+      Script: {instanceID: 13146}
+    - Class: 114
+      Script: {instanceID: 13662}
+    - Class: 114
+      Script: {instanceID: 14178}
+    - Class: 114
+      Script: {instanceID: 14280}
+    - Class: 114
+      Script: {instanceID: 23426}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -137,12 +217,6 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: Button
-  - hash:
-      serializedVersion: 2
-      Hash: aeb62f729c52c814dec86c47dcac1471
-    assemblyName: UnityEngine.UI.dll
-    namespaceName: UnityEngine.UI
-    className: Text
   - hash:
       serializedVersion: 2
       Hash: 4bc4346a71a8df53a6b106f68ef3a190
@@ -191,6 +265,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: ActivationTrack
+  - hash:
+      serializedVersion: 2
+      Hash: aeb62f729c52c814dec86c47dcac1471
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: Text
   - hash:
       serializedVersion: 2
       Hash: 499fd23433e68e265d153aa6b95d0047
@@ -397,6 +477,12 @@ ScriptsOnlyBuild:
     className: RandomizeColorOnAwakeBehavior
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: LevelNumberFadeIn
+  - hash:
+      serializedVersion: 2
       Hash: b3ab2106268377ffe25dd18ac23dca28
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
@@ -457,7 +543,7 @@ ScriptsOnlyBuild:
     className: RemoteTestResultSender
   - hash:
       serializedVersion: 2
-      Hash: de30832ea65658da55ef845dc6e22b2b
+      Hash: 4c00e5e8a1b240957635144d3699b43c
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: LevelSwipeInTransitionBehavior
@@ -703,11 +789,12 @@ ScriptsOnlyBuild:
     className: PlayableTrack
   - hash:
       serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+      Hash: 38b8cc5df7480ace157f4ef3e7c676c3
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
-    className: LevelNumberFadeIn
+    className: LevelSwipeOutTransitionBehavior
   platform: 19
   scenePathNames:
   - Assets/Scenes/01 - Title Screen.unity
+  - Assets/Scenes/02 - Number Pattern.unity
   playerPath: C:/Users/jbeslinger/Downloads/Screw the Rules,.exe

@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 4668244062686205914}
   - component: {fileID: 4668244062686205915}
   - component: {fileID: 4668244062686205913}
+  - component: {fileID: 717507693}
+  - component: {fileID: 717507694}
   m_Layer: 0
   m_Name: Backdrop
   m_TagString: Untagged
@@ -25,7 +27,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4668244062686205916}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -102,3 +104,32 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &717507693
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4668244062686205916}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52b209948597f654b80a367aa3cfb3f3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  controllers:
+  - {fileID: 22100000, guid: 44a37d3024a73fe4b9098314874085cc, type: 2}
+  - {fileID: 22100000, guid: 2a8d2e59d22c79a4e91a9d85dce70403, type: 2}
+--- !u!114 &717507694
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4668244062686205916}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c61e42d5671d3f545bf054457c781d87, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  alpha: 1
+  value: 0.5
