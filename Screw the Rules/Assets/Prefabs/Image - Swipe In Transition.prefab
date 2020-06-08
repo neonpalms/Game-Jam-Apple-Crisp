@@ -44,6 +44,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   transition: {fileID: 5223375353907413853}
+  restartButton: {fileID: 0}
 --- !u!1 &5223375353907413849
 GameObject:
   m_ObjectHideFlags: 0
@@ -134,9 +135,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   swipeDuration: 1
-  delay: 0
-  colorAlpha: 1
-  colorValue: 0.75
+  delay: 1
+  randomizedColorBaseAlpha: 1
+  randomizedColorBaseValue: 0.75
   winConditionMet: 0
 --- !u!1 &5223375354857213701
 GameObject:

@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Scenes/04 - Mario.unity
+- path: Assets/Scenes/07 - Tetris.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0

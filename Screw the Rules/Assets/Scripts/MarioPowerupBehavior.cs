@@ -41,7 +41,10 @@ public class MarioPowerupBehavior : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.transform.name == "Player")
+        {
+            collision.transform.GetComponent<MarioPlayerBehavior>().PowerUp();
             Destroy(gameObject);
+        }
     }
 
     // Make the powerup reflect off the wall if its trigger colliders touch the wall.

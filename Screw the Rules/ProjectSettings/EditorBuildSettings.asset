@@ -17,4 +17,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/04 - Mario.unity
     guid: 9f9848ae2fa438343b869dc2c6308db6
+  - enabled: 1
+    path: Assets/Scenes/05 - The Fake End.unity
+    guid: 1e963e7e21dde4d499a3301efc2ba767
+  - enabled: 1
+    path: Assets/Scenes/06 - Odd One Out.unity
+    guid: 43398b951b8dda14a930abf5df3064fe
+  - enabled: 1
+    path: Assets/Scenes/07 - Tetris.unity
+    guid: 379f8bf5aec4de943b9bb95f06092e39
   m_configObjects: {}

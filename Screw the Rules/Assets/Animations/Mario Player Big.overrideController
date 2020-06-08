@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!221 &22100000
+AnimatorOverrideController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Mario Player Big
+  m_Controller: {fileID: 9100000, guid: fedcf42fbc6fb8844bee468739fc078c, type: 2}
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: 304dadbf89bf8774aa2c104c948cccb6, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 95c67a4e96e2a8d4ea5c4ed9ce9ee427, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 2f116c28b89c4c74fb0c7e9559cf9a00, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 7cc55f73732b46a409c23f0d54413103, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 67bf82641bfa25543afafe9de400e7aa, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 4d1723b24c613244db7aab5d7dfd3097, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: b2458b296b00a534d8b213bb4848a554, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 7d7f3016c8c7c304f8a1fabcce4643c2, type: 2}

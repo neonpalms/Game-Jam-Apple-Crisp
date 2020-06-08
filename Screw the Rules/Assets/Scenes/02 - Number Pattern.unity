@@ -1234,7 +1234,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   swipeDuration: 1
-  delay: 0
+  delay: 1
   randomizedColorBaseAlpha: 1
   randomizedColorBaseValue: 0.75
   winConditionMet: 0
