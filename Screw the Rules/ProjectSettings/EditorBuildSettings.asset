@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/03 - Pong.unity
     guid: 3c25b2f5e624da7448c688bec39cd4bb
+  - enabled: 1
+    path: Assets/Scenes/04 - Mario.unity
+    guid: 9f9848ae2fa438343b869dc2c6308db6
   m_configObjects: {}

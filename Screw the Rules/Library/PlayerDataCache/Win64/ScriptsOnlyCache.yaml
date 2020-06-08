@@ -1,25 +1,20 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
-    - FakePlayButtonBehavior
-    - FakeQuitButtonBehavior
     - HintButtonBehavior
     - LevelNumberBehavior
-    - LevelNumberFadeIn
     - LevelSwipeInTransitionBehavior
     - LevelSwipeOutTransitionBehavior
+    - MarioPlayerBehavior
     - QuitButtonBehavior
     - RandomizeAnimationControllerOnAwakeBehavior
     - RandomizeColorOnAwakeBehavior
-    - RealPlayButtonBehavior
     - RestartButtonBehavior
-    - SubtitleTextBehavior
-    - TitleTextBehavior
-    - TitleTextFlyInTween
     - WinListenerBehavior
     Unity.2D.Animation.Editor.dll:
     - UnityEditor.U2D.Animation.BoneGizmo
     Unity.2D.Tilemap.Editor.dll:
+    - UnityEditor.Tilemaps.GridBrush
     - UnityEditor.Tilemaps.GridPaintingState
     - UnityEditor.Tilemaps.GridPaletteBrushes
     - UnityEditor.Tilemaps.GridPalettes
@@ -41,7 +36,7 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.Outline
     - UnityEngine.UI.Text
   sceneClasses:
-    Assets/Scenes/01 - Title Screen.unity:
+    Assets/Scenes/04 - Mario.unity:
     - Class: 1
       Script: {instanceID: 0}
     - Class: 4
@@ -54,10 +49,12 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 48
       Script: {instanceID: 0}
-    - Class: 58
+    - Class: 50
       Script: {instanceID: 0}
     - Class: 61
       Script: {instanceID: 0}
+    - Class: 66
+      Script: {instanceID: 0}
     - Class: 74
       Script: {instanceID: 0}
     - Class: 81
@@ -69,53 +66,43 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11150}
+      Script: {instanceID: 606}
     - Class: 114
-      Script: {instanceID: 11152}
+      Script: {instanceID: 11172}
     - Class: 114
       Script: {instanceID: 11174}
     - Class: 114
-      Script: {instanceID: 11514}
+      Script: {instanceID: 11196}
     - Class: 114
-      Script: {instanceID: 12090}
+      Script: {instanceID: 11536}
     - Class: 114
-      Script: {instanceID: 12110}
+      Script: {instanceID: 12134}
     - Class: 114
-      Script: {instanceID: 12178}
+      Script: {instanceID: 12202}
     - Class: 114
-      Script: {instanceID: 12262}
+      Script: {instanceID: 12286}
     - Class: 114
-      Script: {instanceID: 12328}
+      Script: {instanceID: 12356}
     - Class: 114
-      Script: {instanceID: 12374}
+      Script: {instanceID: 12402}
     - Class: 114
-      Script: {instanceID: 12468}
+      Script: {instanceID: 12712}
     - Class: 114
-      Script: {instanceID: 12682}
+      Script: {instanceID: 12764}
     - Class: 114
-      Script: {instanceID: 12734}
+      Script: {instanceID: 12824}
     - Class: 114
-      Script: {instanceID: 12794}
+      Script: {instanceID: 13170}
     - Class: 114
-      Script: {instanceID: 12978}
+      Script: {instanceID: 13180}
     - Class: 114
-      Script: {instanceID: 13140}
+      Script: {instanceID: 13696}
     - Class: 114
-      Script: {instanceID: 13148}
+      Script: {instanceID: 14212}
     - Class: 114
-      Script: {instanceID: 13664}
+      Script: {instanceID: 14314}
     - Class: 114
-      Script: {instanceID: 13690}
-    - Class: 114
-      Script: {instanceID: 13886}
-    - Class: 114
-      Script: {instanceID: 14180}
-    - Class: 114
-      Script: {instanceID: 14282}
-    - Class: 114
-      Script: {instanceID: 14344}
-    - Class: 114
-      Script: {instanceID: 15318}
+      Script: {instanceID: 29716}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -136,82 +123,13 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 224
       Script: {instanceID: 0}
-    Assets/Scenes/02 - Number Pattern.unity:
-    - Class: 1
+    - Class: 331
       Script: {instanceID: 0}
-    - Class: 4
+    - Class: 156049354
       Script: {instanceID: 0}
-    - Class: 20
+    - Class: 483693784
       Script: {instanceID: 0}
-    - Class: 21
-      Script: {instanceID: 0}
-    - Class: 28
-      Script: {instanceID: 0}
-    - Class: 48
-      Script: {instanceID: 0}
-    - Class: 74
-      Script: {instanceID: 0}
-    - Class: 81
-      Script: {instanceID: 0}
-    - Class: 91
-      Script: {instanceID: 0}
-    - Class: 95
-      Script: {instanceID: 0}
-    - Class: 104
-      Script: {instanceID: 0}
-    - Class: 114
-      Script: {instanceID: 11150}
-    - Class: 114
-      Script: {instanceID: 11152}
-    - Class: 114
-      Script: {instanceID: 11174}
-    - Class: 114
-      Script: {instanceID: 11514}
-    - Class: 114
-      Script: {instanceID: 12110}
-    - Class: 114
-      Script: {instanceID: 12178}
-    - Class: 114
-      Script: {instanceID: 12262}
-    - Class: 114
-      Script: {instanceID: 12328}
-    - Class: 114
-      Script: {instanceID: 12374}
-    - Class: 114
-      Script: {instanceID: 12682}
-    - Class: 114
-      Script: {instanceID: 12734}
-    - Class: 114
-      Script: {instanceID: 12794}
-    - Class: 114
-      Script: {instanceID: 13140}
-    - Class: 114
-      Script: {instanceID: 13148}
-    - Class: 114
-      Script: {instanceID: 13664}
-    - Class: 114
-      Script: {instanceID: 14180}
-    - Class: 114
-      Script: {instanceID: 14282}
-    - Class: 115
-      Script: {instanceID: 0}
-    - Class: 128
-      Script: {instanceID: 0}
-    - Class: 157
-      Script: {instanceID: 0}
-    - Class: 196
-      Script: {instanceID: 0}
-    - Class: 212
-      Script: {instanceID: 0}
-    - Class: 213
-      Script: {instanceID: 0}
-    - Class: 221
-      Script: {instanceID: 0}
-    - Class: 222
-      Script: {instanceID: 0}
-    - Class: 223
-      Script: {instanceID: 0}
-    - Class: 224
+    - Class: 1839735485
       Script: {instanceID: 0}
   scriptHashData:
   - hash:
@@ -322,6 +240,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: GridLayoutGroup
+  - hash:
+      serializedVersion: 2
+      Hash: 748103737e59b798d885470b9c5e3f73
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: PongPlayerBehavior
   - hash:
       serializedVersion: 2
       Hash: 8aa3d6ccbcb54ee8db6c1229854adaaa
@@ -468,6 +392,18 @@ ScriptsOnlyBuild:
     className: Selectable
   - hash:
       serializedVersion: 2
+      Hash: 8fca1e29547081eba786730c029460d7
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: PongLazerBehavior
+  - hash:
+      serializedVersion: 2
+      Hash: 36bc6dab1c3b741d6e66f08eccc90ced
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: NumberPuzzleInputFieldBehavior
+  - hash:
+      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
@@ -484,6 +420,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: LevelNumberFadeIn
+  - hash:
+      serializedVersion: 2
+      Hash: f785925784e6d8370369c41216c2ba47
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: PongOpponentBehavior
   - hash:
       serializedVersion: 2
       Hash: b3ab2106268377ffe25dd18ac23dca28
@@ -522,7 +464,7 @@ ScriptsOnlyBuild:
     className: SpriteSkinEntity
   - hash:
       serializedVersion: 2
-      Hash: 480af42f6bc510e3326769c791901f1e
+      Hash: ea1187f588265aed62e415120c399cd8
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: WinListenerBehavior
@@ -580,6 +522,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: LevelSwipeOutTransitionBehavior
+  - hash:
+      serializedVersion: 2
+      Hash: 200fd2619ef11eb38ed48f2f9c829435
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: PongBallBehavior
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -792,18 +740,23 @@ ScriptsOnlyBuild:
     className: ToggleGroup
   - hash:
       serializedVersion: 2
+      Hash: 93c5c50cf2cdc06fbd3119f03c054858
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: SubtitleTextBehavior
+  - hash:
+      serializedVersion: 2
       Hash: c3d3430df9e3ea95e3e3d587961390fb
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
   - hash:
       serializedVersion: 2
-      Hash: 93c5c50cf2cdc06fbd3119f03c054858
+      Hash: 9f056e491bbba220c213e619515c93ba
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
-    className: SubtitleTextBehavior
+    className: MarioPlayerBehavior
   platform: 19
   scenePathNames:
-  - Assets/Scenes/01 - Title Screen.unity
-  - Assets/Scenes/02 - Number Pattern.unity
+  - Assets/Scenes/04 - Mario.unity
   playerPath: C:/Users/jbeslinger/Downloads/Screw the Rules,.exe
