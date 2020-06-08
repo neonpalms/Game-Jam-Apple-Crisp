@@ -178,7 +178,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -214145515
-  m_SortingLayer: 2
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: cedb7491015b5c84c9d65a676d8a7c31, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -273,7 +273,7 @@ PrefabInstance:
     - target: {fileID: 3080733399308601631, guid: 1c9139bb728318a43ba33082c1ba47bb,
         type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 3887060209561503482, guid: 1c9139bb728318a43ba33082c1ba47bb,
         type: 3}
@@ -318,7 +318,7 @@ PrefabInstance:
     - target: {fileID: 7592857875038123083, guid: 1c9139bb728318a43ba33082c1ba47bb,
         type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8219144098768491042, guid: 1c9139bb728318a43ba33082c1ba47bb,
         type: 3}
@@ -542,7 +542,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -214145515
-  m_SortingLayer: 2
+  m_SortingLayer: 3
   m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: f34a9604f8202fa42b65d341ec9bd2f0, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -630,7 +630,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -214145515
-  m_SortingLayer: 2
+  m_SortingLayer: 3
   m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: ffa4cb44ce2cd0040be22e8f314eaaa5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -753,7 +753,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -214145515
-  m_SortingLayer: 2
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: cedb7491015b5c84c9d65a676d8a7c31, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -897,7 +897,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -214145515
-  m_SortingLayer: 2
+  m_SortingLayer: 3
   m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: ffa4cb44ce2cd0040be22e8f314eaaa5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -1175,7 +1175,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: You Can't Tell Me What to Do Dad!
+  m_Text: You Can't Tell Me What to Do!
 --- !u!222 &1298345179
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1238,6 +1238,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1298345181}
+        m_MethodName: ChangeMessage
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1298345181
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1247,11 +1258,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1298345176}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 991b197d7bd1644408f801720a861efb, type: 3}
+  m_Script: {fileID: 11500000, guid: cddc79dff148cc644b4672e6fce444a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   randomFonts:
   - {fileID: 12800000, guid: 5024f63e41b7ba145ac02235d970551f, type: 3}
+  - {fileID: 12800000, guid: 27abf14a05654004fb3437ba7bfa20aa, type: 3}
   - {fileID: 12800000, guid: 32d897605d2a7f744aa65c021c2a4ec9, type: 3}
   - {fileID: 12800000, guid: 9194c078bc14df944a27292b543e6fb5, type: 3}
   - {fileID: 12800000, guid: 97687d95df93d1345972fc19bcc58f33, type: 3}
@@ -1262,7 +1274,6 @@ MonoBehaviour:
   - {fileID: 12800000, guid: 1f8959e9e3fdf71498a00f092ea5c9ee, type: 3}
   - {fileID: 12800000, guid: 9008bd3cd12944f42b6c41e0a4b48b42, type: 3}
   - {fileID: 12800000, guid: f315d65c552bc6440aa2d5e73db50e4b, type: 3}
-  - {fileID: 12800000, guid: 27abf14a05654004fb3437ba7bfa20aa, type: 3}
 --- !u!114 &1298345182
 MonoBehaviour:
   m_ObjectHideFlags: 0
