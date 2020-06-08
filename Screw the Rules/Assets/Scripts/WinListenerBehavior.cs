@@ -2,7 +2,7 @@
 
 public class WinListenerBehavior : MonoBehaviour
 {
-    #region Statc Fields
+    #region Static Fields
     public static bool winConditionMet;
     #endregion
 

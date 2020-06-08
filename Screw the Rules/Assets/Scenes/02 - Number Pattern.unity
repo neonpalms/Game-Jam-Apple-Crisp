@@ -521,6 +521,7 @@ GameObject:
   - component: {fileID: 1437171425}
   - component: {fileID: 1437171424}
   - component: {fileID: 1437171423}
+  - component: {fileID: 1437171426}
   m_Layer: 5
   m_Name: InputField
   m_TagString: Untagged
@@ -601,7 +602,18 @@ MonoBehaviour:
   m_CharacterLimit: 3
   m_OnEndEdit:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1437171426}
+        m_MethodName: CheckAnswer
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -649,6 +661,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1437171421}
   m_CullTransparentMesh: 0
+--- !u!114 &1437171426
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1437171421}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b1b3936511eeb40499a5684ed8dcc3f9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  levelTransitionText: {fileID: 1570114133}
 --- !u!1 &1458442573
 GameObject:
   m_ObjectHideFlags: 0
@@ -727,6 +752,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1458442573}
   m_CullTransparentMesh: 0
+--- !u!114 &1570114133 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3080733398371484992, guid: 1c9139bb728318a43ba33082c1ba47bb,
+    type: 3}
+  m_PrefabInstance: {fileID: 1606413731}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1606413731
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -864,7 +901,7 @@ PrefabInstance:
     - target: {fileID: 9158694572921565869, guid: 1c9139bb728318a43ba33082c1ba47bb,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1c9139bb728318a43ba33082c1ba47bb, type: 3}
