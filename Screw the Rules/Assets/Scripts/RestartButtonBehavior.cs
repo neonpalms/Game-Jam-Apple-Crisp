@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class RestartButtonBehavior : MonoBehaviour
 {
@@ -19,6 +20,6 @@ public class RestartButtonBehavior : MonoBehaviour
 #if UNITY_EDITOR
         Debug.Log("Restarted scene.");
 #endif
-        Application.LoadLevel(Application.loadedLevel);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 }

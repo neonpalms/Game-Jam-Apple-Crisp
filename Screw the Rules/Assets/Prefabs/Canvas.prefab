@@ -601,6 +601,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Image - Swipe In Transition
       objectReference: {fileID: 0}
+    - target: {fileID: 8789130409467187213, guid: b64c15e23eab92c489e1d20551bc0e56,
+        type: 3}
+      propertyPath: restartButton
+      value: 
+      objectReference: {fileID: 9158694571401969149}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b64c15e23eab92c489e1d20551bc0e56, type: 3}
 --- !u!224 &3080733399308601631 stripped
@@ -728,6 +733,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1790e36420e4e094a8a2be579f51a7da, type: 3}
+--- !u!1 &9158694571401969149 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1655162611438458070, guid: 1790e36420e4e094a8a2be579f51a7da,
+    type: 3}
+  m_PrefabInstance: {fileID: 7629776786904738091}
+  m_PrefabAsset: {fileID: 0}
 --- !u!224 &9158694571401969148 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 1655162611438458071, guid: 1790e36420e4e094a8a2be579f51a7da,

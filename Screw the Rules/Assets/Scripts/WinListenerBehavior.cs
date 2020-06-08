@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 
 public class WinListenerBehavior : MonoBehaviour
 {
@@ -8,6 +9,7 @@ public class WinListenerBehavior : MonoBehaviour
 
     #region Fields
     public LevelSwipeInTransitionBehavior transition;
+    public GameObject restartButton;
     #endregion
 
     // Every time an instance of this object is created, which should be every scene,
@@ -28,5 +30,11 @@ public class WinListenerBehavior : MonoBehaviour
     {
         transition.winConditionMet = true;
         winConditionMet = false;
+        
+        if (restartButton != null)
+        {
+            restartButton.GetComponent<Button>().interactable = false;
+            restartButton.GetComponent<RestartButtonBehavior>().enabled = false;
+        }
     }
 }

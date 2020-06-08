@@ -13,7 +13,7 @@ public class PongLazerBehavior : MonoBehaviour
     BoxCollider2D m_MyCollider;
     #endregion
 
-    private void OnEnable()
+    private void Start()
     {
         m_MyCollider = GetComponent<BoxCollider2D>();
 
@@ -29,6 +29,19 @@ public class PongLazerBehavior : MonoBehaviour
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.transform.name == "Pong Opponent")
+            collision.transform.GetComponent<PongOpponentBehavior>().Hurt();
+
+        Destroy(gameObject);
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        Destroy(gameObject);
+    }
+
+    private void OnBecameInvisible()
     {
         Destroy(gameObject);
     }
