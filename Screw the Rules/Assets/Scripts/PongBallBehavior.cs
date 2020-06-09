@@ -108,7 +108,7 @@ public class PongBallBehavior : MonoBehaviour
     // This is called when the player loses the ball.
     private void Reset()
     {
-        // TODO: Play Buzzer sound
+        SoundEffectsManagerBehavior.instance.PlayLoseNoise();
         transform.position = Vector2.zero;
         m_Dir = BallDirection.RIGHT;
         m_TimeElapsed = 0.0f;

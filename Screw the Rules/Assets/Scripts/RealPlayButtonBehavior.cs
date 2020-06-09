@@ -26,7 +26,7 @@ public class RealPlayButtonBehavior : MonoBehaviour
         WinListenerBehavior.winConditionMet = true;
         m_MyCollider.enabled = false;
         levelNumberTextBox.FadeIn();
-        // TODO: Play ding-dong sound!
+        SoundEffectsManagerBehavior.instance.PlayWinNoise();
     }
 
     private void OnMouseOver()

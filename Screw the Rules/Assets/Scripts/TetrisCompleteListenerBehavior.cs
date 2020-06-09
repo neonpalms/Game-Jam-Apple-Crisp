@@ -35,7 +35,23 @@ public class TetrisCompleteListenerBehavior : MonoBehaviour
         }
 
         if (everyoneIsHappy)
-            WinListenerBehavior.winConditionMet = true;
+            Win();
+    }
+
+    private void Win()
+    {
+        ClearAllPieces();
+        WinListenerBehavior.winConditionMet = true;
+    }
+
+    private void ClearAllPieces()
+    {
+        float animationDuration = 0.5f;
+
+        foreach(GameObject piece in GameObject.FindGameObjectsWithTag("Tetris Piece"))
+        {
+            LeanTween.scaleY(piece, 0.0f, animationDuration);
+        }
     }
     #endregion
 }

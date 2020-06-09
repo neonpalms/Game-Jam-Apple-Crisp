@@ -28,7 +28,7 @@ public class WinListenerBehavior : MonoBehaviour
 
     private void WinLevel()
     {
-        // TODO: Play the success sound!
+        SoundEffectsManagerBehavior.instance.PlayWinNoise();
 
         transition.winConditionMet = true;
         winConditionMet = false;

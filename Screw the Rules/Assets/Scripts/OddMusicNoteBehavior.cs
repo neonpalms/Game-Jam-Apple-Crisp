@@ -24,7 +24,7 @@ public class OddMusicNoteBehavior : MonoBehaviour
 
     public void EnableNextPuzzle(GameObject nextPuzzle)
     {
-        // TODO: Play 'win' sound
+        SoundEffectsManagerBehavior.instance.PlayWinNoise();
         nextPuzzle.SetActive(true);
         transform.parent.gameObject.SetActive(false);
     }

@@ -29,7 +29,7 @@ public class NumberPuzzleInputFieldBehavior : MonoBehaviour
         switch (answer)
         {
             case "7":
-                // TODO: Play buzzer noise
+                SoundEffectsManagerBehavior.instance.PlayLoseNoise();
                 m_InputField.SetTextWithoutNotify("");
                 break;
             case "":

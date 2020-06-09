@@ -1,8 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using System.Runtime.CompilerServices;
-using UnityEngine;
-using UnityEngine.EventSystems;
+﻿using UnityEngine;
 
 public class FakePlayButtonBehavior : MonoBehaviour
 {
@@ -21,7 +17,7 @@ public class FakePlayButtonBehavior : MonoBehaviour
     // Plays an error sound when this button is clicked.
     private void OnMouseDown()
     {
-        // TODO: Play Error sound!
+        SoundEffectsManagerBehavior.instance.PlayLoseNoise();
     }
 
     private void OnMouseOver()
