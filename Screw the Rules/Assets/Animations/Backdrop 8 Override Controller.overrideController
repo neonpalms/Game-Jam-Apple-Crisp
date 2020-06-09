@@ -1,0 +1,15 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!221 &22100000
+AnimatorOverrideController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Backdrop 8 Override Controller
+  m_Controller: {fileID: 9100000, guid: c86ba20a1dbd6cc4e89d0a31f3a3b313, type: 2}
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: 7216f2c43d1d1ac4fab6400213844336, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 7216f2c43d1d1ac4fab6400213844336, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: af6c74014e16ca7438328198f5845386, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 53e5972cf1e55a949abad6e0926b3cf0, type: 2}

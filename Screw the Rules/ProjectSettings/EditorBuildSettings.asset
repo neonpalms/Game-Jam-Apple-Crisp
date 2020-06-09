@@ -12,18 +12,21 @@ EditorBuildSettings:
     path: Assets/Scenes/02 - Number Pattern.unity
     guid: 9ad1ddfb6b5aaf94c8e52dd39b2e884f
   - enabled: 1
-    path: Assets/Scenes/03 - Pong.unity
-    guid: 3c25b2f5e624da7448c688bec39cd4bb
-  - enabled: 1
-    path: Assets/Scenes/04 - Mario.unity
-    guid: 9f9848ae2fa438343b869dc2c6308db6
-  - enabled: 1
-    path: Assets/Scenes/05 - The Fake End.unity
+    path: Assets/Scenes/03 - The Fake End.unity
     guid: 1e963e7e21dde4d499a3301efc2ba767
   - enabled: 1
-    path: Assets/Scenes/06 - Odd One Out.unity
+    path: Assets/Scenes/04 - Odd One Out.unity
     guid: 43398b951b8dda14a930abf5df3064fe
+  - enabled: 1
+    path: Assets/Scenes/05 - Pong.unity
+    guid: 3c25b2f5e624da7448c688bec39cd4bb
+  - enabled: 1
+    path: Assets/Scenes/06 - Mario.unity
+    guid: 9f9848ae2fa438343b869dc2c6308db6
   - enabled: 1
     path: Assets/Scenes/07 - Tetris.unity
     guid: 379f8bf5aec4de943b9bb95f06092e39
+  - enabled: 1
+    path: Assets/Scenes/20 - The End.unity
+    guid: a2172c9ac63f7944dbcc463ce2caf08e
   m_configObjects: {}
